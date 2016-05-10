@@ -1,5 +1,29 @@
 # Changelog
 
+## v0.7.0 (22 April 2016)
+* Replaced internal logger by the debug module logger.
+* Fixed some project metadata.
+
+## v0.6.0 (04 April 2016)
+* Added optional sending support to the body auth params.
+* Updated license information.
+* Updated main dependencies version.
+* Fixed leaked token when a refresh token was used.
+
+## v0.5.1 (25 January 2016)
+* Fixed error class prototype inheritance. Now inherits correctly from Error.
+
+## v0.5.0 (22 January 2016)
+* Now all error states returned from the server, are rejected as HTTPError instances. (This allow to know what httpStatusCode was returned)
+
+## v0.4.0 (18 January 2016)
+* Updated project dependencies.
+* Added support for passing arguments to the refresh token action.
+* Added project badges.
+* Code general cleanup and applied code styleguide.
+* Created CONTRIBUTING guides! (Separated from README)
+* Fixed bug, which resolved promises even if the token wasn´t retrieved. #64
+
 ## v0.3.0 (29 November 2015)
 * Better documentation!
 * Added support for promise based API
